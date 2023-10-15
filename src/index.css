@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(#08f, #fff);
+}
+.time1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #8f0909;
+  margin: 20px auto;
+}
+.time2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #91910f;
+  margin: 20px auto;
+}
+.time3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #0e930e;
+  margin: 20px auto;
+}
+.traffic-light {
+  display: block;
+
+  margin-left: -60px;
+  margin-top: -160px;
+  background-color: #333;
+  width: 120px;
+  height: 320px;
+  border-radius: 30px;
+}
+.color1 {
+  background-color: darken(#ff0000, 15%);
+  animation: blink1 1.1s step-end infinite;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+@keyframes blink1 {
+  0% {
+    background-color: #ff0000;
+    box-shadow: 0 0 6em #ff0000;
+  }
+
+  50% {
+    background-color: #ff0000;
+    box-shadow: 0 0 0em transparent;
+  }
+}
+.color2 {
+  background-color: darken(#ffff00, 15%);
+  animation: blink2 1.1s step-end infinite;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+@keyframes blink2 {
+  0% {
+    background-color: #ffff00;
+    box-shadow: 0 0 6em #ffff00;
+  }
+
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 0em transparent;
+  }
+}
+.color3 {
+  background-color: darken(#00ff00, 15%);
+  animation: blink3 1.1s step-end infinite;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+@keyframes blink3 {
+  0% {
+    background-color: #00ff00;
+    box-shadow: 0 0 6em #00ff00;
+  }
+
+  50% {
+    background-color: #00ff00;
+    box-shadow: 0 0 0em transparent;
+  }
+}
